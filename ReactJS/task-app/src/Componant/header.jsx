@@ -10,10 +10,13 @@ import {
 
 import Home from './Home';
 import About from './About';
+import Gallary from './gallary';
+import Food from './food';
+import Comp from './comp';
 
 
 export default function header (){
-  const Numbers = {'/home':'Home','/about':'About'}
+  const Numbers = {'/home':'Home','/about':'About', '/gallary':'Gallary', '/food':'Food','/comp':'Comp'}
   const returndata= Object.entries(Numbers).map((res,i)=>{
     return <li className="nav-item" key={i}>
            <Link className="nav-link" to={res[0]}>{res[1]}</Link>
@@ -37,6 +40,9 @@ export default function header (){
 <Routes>
   <Route path='/home' element={<Home/>}/>
   <Route path='/about' element={<About/>}/>
+  <Route path='/gallary' element={<Gallary/>}/>
+  <Route path='/food' element={<Food/>}/>
+  <Route path='/comp' element={<Comp/>}/>
 </Routes>
 
 </Router>
