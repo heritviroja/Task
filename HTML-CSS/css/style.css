@@ -1,0 +1,186 @@
+<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+
+		*{box-sizing: border-box;}
+		body
+		{
+			height: 100vh;
+			background: linear-gradient(to top, #000000, #0f0007, #160012, #19011b, #150526);
+		}
+
+		
+
+		.c1
+		{
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			border-radius: 50%;
+			background: linear-gradient(to left, #1845ad,#23a2f6);
+			left: 80px;
+			top: 80px;
+		}
+
+		.c2
+		{
+			height: 170px;
+			width: 170px;
+			position: absolute;
+			border-radius: 50%;
+			background: linear-gradient(to right, rgba(56,121,27,1) 58%, rgba(157,191,142,1) 100%);
+			left: 380px;
+			top: 300px;
+		}
+
+		.c3
+		{
+			height: 80px;
+			width: 80px;
+			position: absolute;
+			border-radius: 50%;
+			background: linear-gradient(to bottom,rgba(194,30,74,1) 58%, rgba(205,146,185,1) 100%);
+			left: 800px;
+			top: 150px;
+		}
+
+		.c4
+		{
+			height: 40px;
+			width: 40px;
+			position: absolute;
+			border-radius: 50%;
+			background: linear-gradient(to right, rgba(69,7,126,1) 58%, rgba(164,128,196,1) 100%);
+			right: 100px;
+			top: 100px;
+			backdrop-filter: blur(20px);
+			-webkit-backdrop-filter: blur(20px);
+		}
+
+		.c5
+		{
+			height: 140px;
+			width: 140px;
+			position: absolute;
+			border-radius: 50%;
+			background: linear-gradient(333deg, rgba(177,126,13,1) 58%, rgba(217,213,131,1) 100%);
+			right: 400px;
+			top: 430px;
+		}
+
+		.Card
+		{
+			width: 500px;
+			height: 320px;
+			margin: 200px auto;
+
+		}
+		.glass:hover
+		{
+			transform: scaleX(1.1)scaleY(1.1);
+		}
+
+		.glass
+		{
+			background:linear-gradient(to right, rgba(255,255,255, 0.4),rgba(255,255,255, 0.1));
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);	
+			border-radius: 20px ;
+			border: 1px solid rgba(255,255,255, 0.18);
+			box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+			transition: 1s;
+
+		}
+
+		.logo
+		{
+			height: 40px;
+			width: auto;
+			position: absolute;
+			top: 30px;
+			left: 45px;
+		}
+
+		.visa
+		{
+			height: 40px;
+			width: auto;
+			position: absolute;
+			float: right;
+			top: 30px;
+			right: 45px;
+		}
+		.chip
+		{
+			height: 70px;
+			width: auto;
+			position: absolute;
+			float: left;
+			top: 120px;
+			left: 45px;
+		}
+
+		.card_name 
+		{
+			float: left;
+			font-size: 23px;
+		    line-height: 18px;
+		    color: #fff;
+		 	letter-spacing: 1px;
+		 	position: absolute;
+		 	bottom: 25%;
+		 	left: 45px;
+		 	font-family: "Lucida Console", "Courier New", monospace;
+		} 
+
+		.card_expiry
+		{
+			display: block;
+    		width: auto;
+    		position: absolute;
+    		bottom: 120px;
+    		right: 45px;
+    	}
+		
+		.card_label {
+    		font-size: 10px;
+    		color: rgba(255,255,255,0.8);
+    		letter-spacing: 1px;
+    		float: left;
+    		margin-right: 5px;
+    		text-align: right;
+    		font-family: "Lucida Console", "Courier New", monospace;
+		}
+
+		.card_info {
+    		font-size: 20px;
+    		color: rgba(255,255,255,0.8);
+    		letter-spacing: 1px;
+    		font-family: "Lucida Console", "Courier New", monospace;
+		}
+		
+		.card_numer 
+		{
+    		width: auto;
+    		display: block;
+    		word-spacing: 4px;
+    		font-size: 23px;
+    		letter-spacing: 2px;
+    		color: #fff;
+    		position: absolute;
+		  	bottom: 35px;
+		  	left: 45px;
+		  	font-family: "Lucida Console", "Courier New", monospace;
+		}
+
+		.paywave 
+		{
+ 		  	float: right;
+  			position: absolute;
+  			bottom: 35px;
+  			right: 45px;
+  			height: 56px;
+  			width: 30px;
+  			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='56' viewBox='0 0 46 56'%3E%3Ctitle%3EContactlessIndicator 000%3C/title%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='6' stroke-linecap='round' d='m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5 0 0,1 0,28.5M3,19a18,17 0 0,1 0,18'/%3E%3C/svg%3E");
+  			opacity: 0.6;
+		}
+	</style>
