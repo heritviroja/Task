@@ -9,7 +9,6 @@ file_name = f"{date_string}.txt"
 # folder path for file save
 folder_path = "C:\\Users\\HC\\Desktop\\Python\\Task_covid"
 file_path = os.path.join(folder_path, file_name)
-print(file_path)
 # for check file is exist
 if os.path.isfile(file_path):
     print(f"File '{file_name}' found.")
@@ -25,7 +24,7 @@ if os.path.isfile(file_path):
         file.close()
 # if file not present else part create new file
 else:
-    print("nothing")
+
     with open(file_path, "w") as file:
         print(f"A new text file '{file_name}' has been created.")
         name = input("Enter name : ")
